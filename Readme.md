@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «{{Kekstagram}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [{{Александра Корбакова}}]({{https://htmlacademy.ru/profile/id241867}}).
 * Наставник: `Неизвестно`.
 
 ---
