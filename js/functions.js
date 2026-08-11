@@ -1,12 +1,25 @@
 // Функция №1. Проверка длины строки
 
-function checkStringLength (string, maxLength) {
-  return string.length <= maxLength;
+function checkStringLength (textToValidate, maxLength) {
+  return textToValidate.length <= maxLength;
 }
 
-checkStringLength();
+checkStringLength('Текст', 15);
+
+const checkStringLength2 = (textToValidate, maxLength) => textToValidate.length <= maxLength;
+
+checkStringLength2('Текст', 15);
 
 // Функция №2. Проверка является ли строка палиндромом
+
+function isPalindrom(string) {
+  const cleaned = string.toLowerCase().replaceAll(' ', '');
+  const reversed = cleaned.split('').reverse().join('');
+
+  return cleaned === reversed;
+}
+
+isPalindrom('довОд');
 
 function isPalindrom2 (string) {
   string = string.replace(/\s/g, '').toLowerCase();
@@ -17,7 +30,7 @@ function isPalindrom2 (string) {
   return reverseString === string;
 }
 
-isPalindrom2();
+isPalindrom2('ABb');
 
 
 function isPalindrom3 (string) {
@@ -29,7 +42,7 @@ function isPalindrom3 (string) {
   } return true;
 }
 
-isPalindrom3();
+isPalindrom3('довОд');
 
 function isPalindrom4 (string) {
   let j = string.length - 1;
@@ -45,7 +58,7 @@ function isPalindrom4 (string) {
   return result;
 }
 
-isPalindrom4();
+isPalindrom4('довОд');
 
 //Функция №3. Извлечение чисел из строки
 
